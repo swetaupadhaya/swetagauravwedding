@@ -18,7 +18,7 @@ export const MusicPlayer = () => {
 
   return (
     <>
-      <audio ref={audioRef} src="/audio/background.mp3" preload="auto" loop />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}audio/background.mp3`} preload="auto" loop />
       <button
         type="button"
         onClick={toggleAudio}

@@ -14,7 +14,7 @@ const events = [
     date: "Fri · Nov 20, 2026",
     time: "07:00 PM onwards",
     venue: "Panorama Country Club & Resort, Asansol, West Bengal",
-    image: "/images/sanget.png"
+    image: `${import.meta.env.BASE_URL}images/sanget.png`
   },
   {
     title: "Haldi",
@@ -22,7 +22,7 @@ const events = [
     date: "Sat · Nov 21, 2026",
     time: "10:00 AM onwards",
     venue: "Panorama Country Club & Resort, Asansol, West Bengal",
-    image: "/images/haldi.png"
+    image: `${import.meta.env.BASE_URL}images/haldi.png`
   },
   {
     title: "Baarat Swagat & Varmala",
@@ -30,7 +30,7 @@ const events = [
     date: "Sat · Nov 21, 2026",
     time: "6:30 PM onwards",
     venue: "Panorama Country Club & Resort, Asansol, West Bengal",
-    image: "/images/varmal.png"
+    image: `${import.meta.env.BASE_URL}images/varmal.png`
   },
   {
     title: "Phere",
@@ -38,7 +38,7 @@ const events = [
     date: "Sat · Nov 21, 2026",
     time: "8:30 PM onwards",
     venue: "Panorama Country Club & Resort, Asansol, West Bengal",
-    image: "/images/phere.png"
+    image: `${import.meta.env.BASE_URL}images/phere.png`
   },
   {
     title: "Reception",
@@ -46,7 +46,7 @@ const events = [
     date: "Fri · Nov 27, 2026",
     time: "07:00 PM onwards",
     venue: "Shiven Farm Banquet, Najafgarh,New Delhi",
-    image: "/images/recept.jpg"
+    image: `${import.meta.env.BASE_URL}images/recept.jpg`
   }
 ];
 
