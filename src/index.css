@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float-petal {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-petal {
+  animation: float-petal linear infinite;
+}
+
+@keyframes butterfly-fly {
+  0% { transform: translate(-10vw, 60vh) rotate(-8deg) scale(1); }
+  20% { transform: translate(20vw, 35vh) rotate(6deg) scale(1.05); }
+  40% { transform: translate(45vw, 55vh) rotate(-4deg) scale(0.95); }
+  60% { transform: translate(65vw, 25vh) rotate(8deg) scale(1.1); }
+  80% { transform: translate(85vw, 45vh) rotate(-6deg) scale(1); }
+  100% { transform: translate(110vw, 30vh) rotate(4deg) scale(1); }
+}
+
+@keyframes butterfly-flap {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(0.55); }
+}
+
+.butterfly-path {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  pointer-events: none;
+  animation: butterfly-fly 18s linear infinite;
+  will-change: transform;
+}
+
+.butterfly-wings {
+  display: inline-block;
+  animation: butterfly-flap 0.25s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, hsl(340 75% 68%), hsl(340 70% 50%));
+}
