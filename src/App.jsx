@@ -61,7 +61,8 @@ export default function App() {
         {/* Main Banner */}
         <section className="relative min-h-screen w-full overflow-hidden">
           <img
-            src="/images/mainbg.jpg"
+            // src="/images/mainbg.jpg"
+            src={`${import.meta.env.BASE_URL}images/mainbg.jpg`}
             alt="Sweta and Gaurav wedding illustration"
             className="absolute inset-0 w-full h-full object-cover"
           />
