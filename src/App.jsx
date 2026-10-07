@@ -48,6 +48,7 @@ const events = [
     venue: "Shiven Farm Banquet, Najafgarh,New Delhi",
     image: `${import.meta.env.BASE_URL}images/recept.jpg`
   }
+  
 ];
 
 export default function App() {
